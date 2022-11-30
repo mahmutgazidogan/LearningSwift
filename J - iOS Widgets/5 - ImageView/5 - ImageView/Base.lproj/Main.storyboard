@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="____ImageView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cXK-gZ-B0f">
+                                <rect key="frame" x="75" y="119" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="CBo-FN-bfC"/>
+                                    <constraint firstAttribute="height" constant="128" id="XT5-jB-cVV"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECb-Pv-Yh0">
+                                <rect key="frame" x="154" y="318" width="82.333333333333314" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resim 1"/>
+                                <connections>
+                                    <action selector="resim1Tikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9GY-9S-Cwd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clp-FL-PNi">
+                                <rect key="frame" x="152.66666666666666" y="405" width="85" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resim 2"/>
+                                <connections>
+                                    <action selector="resim2Tikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nhr-gE-VFZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cXK-gZ-B0f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aqc-im-FWv"/>
+                            <constraint firstItem="Clp-FL-PNi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L2K-di-ZDE"/>
+                            <constraint firstItem="ECb-Pv-Yh0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bF3-Lz-kch"/>
+                            <constraint firstItem="Clp-FL-PNi" firstAttribute="top" secondItem="ECb-Pv-Yh0" secondAttribute="bottom" constant="52" id="cKd-oO-2K6"/>
+                            <constraint firstItem="cXK-gZ-B0f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="fBv-Wg-2YH"/>
+                            <constraint firstItem="ECb-Pv-Yh0" firstAttribute="top" secondItem="cXK-gZ-B0f" secondAttribute="bottom" constant="71" id="ivM-iL-Lun"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="cXK-gZ-B0f" id="g8q-7P-J99"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

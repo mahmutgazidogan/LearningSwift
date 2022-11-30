@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="____Webview_Kullanımı" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5S6-wB-Hbe">
+                                <rect key="frame" x="20" y="47" width="350" height="637"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="637" id="ovi-TR-toy"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agd-0e-Ri6">
+                                <rect key="frame" x="40" y="714" width="310" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4Yh-JF-bdY"/>
+                                </constraints>
+                                <color key="tintColor" red="0.19582199661284722" green="0.42122107166562317" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Giriş Yap">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="girisYap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="72c-89-5Vw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <color key="tintColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="agd-0e-Ri6" firstAttribute="top" secondItem="5S6-wB-Hbe" secondAttribute="bottom" constant="30" id="0MG-uk-cYI"/>
+                            <constraint firstItem="agd-0e-Ri6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="55N-Wd-s0D"/>
+                            <constraint firstItem="5S6-wB-Hbe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5Sw-dy-WFb"/>
+                            <constraint firstItem="5S6-wB-Hbe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BzC-IX-zge"/>
+                            <constraint firstItem="agd-0e-Ri6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KYo-7I-JlH"/>
+                            <constraint firstItem="5S6-wB-Hbe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lcj-Za-xdq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="agd-0e-Ri6" secondAttribute="trailing" constant="40" id="Vwp-B7-Svk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5S6-wB-Hbe" secondAttribute="trailing" constant="20" id="ZGR-1q-2E8"/>
+                            <constraint firstItem="5S6-wB-Hbe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dyu-HO-tD5"/>
+                            <constraint firstItem="5S6-wB-Hbe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eFd-EN-J6C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5S6-wB-Hbe" secondAttribute="trailing" constant="20" id="kOS-7b-dYt"/>
+                            <constraint firstItem="5S6-wB-Hbe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mJ4-6a-fbs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5S6-wB-Hbe" secondAttribute="trailing" constant="20" id="nWV-Du-cCH"/>
+                            <constraint firstItem="5S6-wB-Hbe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oJ1-ZC-3LA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5S6-wB-Hbe" secondAttribute="trailing" constant="20" id="tPp-cf-jzh"/>
+                            <constraint firstItem="5S6-wB-Hbe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uoC-aq-3pe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="5S6-wB-Hbe" id="Xsd-H5-GNb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2948" y="-30"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

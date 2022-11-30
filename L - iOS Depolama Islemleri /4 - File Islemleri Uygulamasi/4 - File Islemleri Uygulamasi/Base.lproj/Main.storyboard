@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="____File_I_s_lemleri_Uygulaması" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x33-kb-gOv">
+                                <rect key="frame" x="40" y="68" width="310" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eut-hE-eye">
+                                <rect key="frame" x="52" y="118" width="52" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yaz"/>
+                                <connections>
+                                    <action selector="yaz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N6v-rZ-4bb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0u-0E-SVd">
+                                <rect key="frame" x="168" y="118" width="55" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Oku"/>
+                                <connections>
+                                    <action selector="oku:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jco-cs-p8I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHO-dJ-Bc0">
+                                <rect key="frame" x="291" y="118" width="43" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sil"/>
+                                <connections>
+                                    <action selector="sil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Re9-1G-UZe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pph-bx-YOB">
+                                <rect key="frame" x="14" y="179" width="128" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resim Kaydet"/>
+                                <connections>
+                                    <action selector="resimKaydet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zkQ-E9-d8D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvg-w6-D1r">
+                                <rect key="frame" x="133" y="179" width="126" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resim Göster"/>
+                                <connections>
+                                    <action selector="resimGoster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ET-Fa-Fsp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcR-yA-Hr1">
+                                <rect key="frame" x="266" y="179" width="93" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resim Sil"/>
+                                <connections>
+                                    <action selector="resimSil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jva-bF-62n"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jV3-j6-m5a">
+                                <rect key="frame" x="16" y="239" width="358" height="571"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="358" id="h3g-XF-WJh"/>
+                                    <constraint firstAttribute="height" constant="571" id="nTG-lQ-S4K"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NcR-yA-Hr1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pph-bx-YOB" secondAttribute="trailing" constant="8" symbolic="YES" id="0n0-SM-d7D"/>
+                            <constraint firstItem="jV3-j6-m5a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="34a-1b-In2"/>
+                            <constraint firstItem="Eut-hE-eye" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="3Ci-Dr-UB5"/>
+                            <constraint firstItem="Eut-hE-eye" firstAttribute="top" secondItem="x33-kb-gOv" secondAttribute="bottom" constant="16" id="3Xn-2s-xg3"/>
+                            <constraint firstItem="oHO-dJ-Bc0" firstAttribute="top" secondItem="x33-kb-gOv" secondAttribute="bottom" constant="16" id="3dd-xK-Dy8"/>
+                            <constraint firstItem="Pph-bx-YOB" firstAttribute="top" secondItem="Eut-hE-eye" secondAttribute="bottom" constant="26" id="4US-cH-fcO"/>
+                            <constraint firstItem="NcR-yA-Hr1" firstAttribute="top" secondItem="oHO-dJ-Bc0" secondAttribute="bottom" constant="26" id="54L-3K-I9G"/>
+                            <constraint firstItem="d0u-0E-SVd" firstAttribute="leading" secondItem="Eut-hE-eye" secondAttribute="trailing" constant="64" id="Bi1-E4-29d"/>
+                            <constraint firstItem="jV3-j6-m5a" firstAttribute="top" secondItem="Pph-bx-YOB" secondAttribute="bottom" constant="25" id="JaZ-i3-o9R"/>
+                            <constraint firstItem="d0u-0E-SVd" firstAttribute="top" secondItem="x33-kb-gOv" secondAttribute="bottom" constant="16" id="Jba-re-wDv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NcR-yA-Hr1" secondAttribute="trailing" constant="31" id="Mve-PC-ceA"/>
+                            <constraint firstItem="Yvg-w6-D1r" firstAttribute="top" secondItem="d0u-0E-SVd" secondAttribute="bottom" constant="26" id="Pgp-gA-Ph3"/>
+                            <constraint firstItem="Yvg-w6-D1r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="Rnt-48-lAv"/>
+                            <constraint firstItem="x33-kb-gOv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="UPt-Wf-Aqw"/>
+                            <constraint firstItem="x33-kb-gOv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="XL6-ey-T9S"/>
+                            <constraint firstItem="Pph-bx-YOB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="Ybn-mh-d4z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x33-kb-gOv" secondAttribute="trailing" constant="40" id="bqr-4a-s8i"/>
+                            <constraint firstItem="NcR-yA-Hr1" firstAttribute="leading" secondItem="Yvg-w6-D1r" secondAttribute="trailing" constant="7" id="ggn-jt-KNT"/>
+                            <constraint firstItem="jV3-j6-m5a" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qec-Lp-xA7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jV3-j6-m5a" secondAttribute="trailing" constant="16" id="sIR-hh-BCc"/>
+                            <constraint firstItem="oHO-dJ-Bc0" firstAttribute="leading" secondItem="d0u-0E-SVd" secondAttribute="trailing" constant="68" id="zmb-oV-Hjh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oHO-dJ-Bc0" secondAttribute="trailing" constant="56" id="zxW-NJ-cPG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resimTutucu" destination="jV3-j6-m5a" id="VKt-ez-yee"/>
+                        <outlet property="textfieldGirdi" destination="x33-kb-gOv" id="RMx-5P-teg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040" y="155"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

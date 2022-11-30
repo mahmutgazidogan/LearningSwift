@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; configuration.title = "English"; ObjectID = "7kN-VL-ASf"; */
+"7kN-VL-ASf.configuration.title" = "Türkçe";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7kN-VL-ASf"; */
+"7kN-VL-ASf.normalTitle" = "Buton";
+
+/* Class = "UILabel"; text = "Hello"; ObjectID = "I4X-oA-MZf"; */
+"I4X-oA-MZf.text" = "Merhaba";

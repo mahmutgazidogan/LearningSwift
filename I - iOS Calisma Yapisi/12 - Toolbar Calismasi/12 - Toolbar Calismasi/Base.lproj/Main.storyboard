@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_2___Toolbar_C_alıs_ması" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXi-zp-5ov">
+                                <rect key="frame" x="0.0" y="761" width="390" height="49"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="LkX-q4-M97">
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="geriButon:" destination="BYZ-38-t0r" id="pnR-sh-bRC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="cDb-Aa-gg5"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="qkS-q4-zMb"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="2cS-JF-UCU"/>
+                                    <barButtonItem title="Oynat" id="eDx-qd-0HJ">
+                                        <color key="tintColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="oynatButon:" destination="BYZ-38-t0r" id="Hrb-XQ-c0J"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="ICC-Z2-gtF"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="wyE-jL-h2l"/>
+                                    <barButtonItem title="Item" image="navBaslik" id="3Hp-sq-0NE">
+                                        <connections>
+                                            <action selector="homeButon:" destination="BYZ-38-t0r" id="kwm-hP-pa6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zb-tQ-6Th">
+                                <rect key="frame" x="80" y="194" width="230" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aXi-zp-5ov" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VBA-QI-BC0"/>
+                            <constraint firstItem="0Zb-tQ-6Th" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f9d-LR-YVi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aXi-zp-5ov" secondAttribute="bottom" id="ih6-ca-rJe"/>
+                            <constraint firstItem="aXi-zp-5ov" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="isY-zM-1UN"/>
+                            <constraint firstItem="0Zb-tQ-6Th" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="j6e-Ry-gr1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="etiket" destination="0Zb-tQ-6Th" id="Jic-Rs-59l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navBaslik" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

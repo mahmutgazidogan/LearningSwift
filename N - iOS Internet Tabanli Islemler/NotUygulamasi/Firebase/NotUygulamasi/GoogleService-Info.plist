@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>792976395760-ikhcijk1l09v9akaessji31lhvkfq75i.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.792976395760-ikhcijk1l09v9akaessji31lhvkfq75i</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA-LeRux3HwxCW8yvwBTivtB8V0owf3F74</string>
+	<key>GCM_SENDER_ID</key>
+	<string>792976395760</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>info.NotUygulamasi</string>
+	<key>PROJECT_ID</key>
+	<string>notuygulamasi-4c506</string>
+	<key>STORAGE_BUCKET</key>
+	<string>notuygulamasi-4c506.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:792976395760:ios:e73cd3d917700ea38ae135</string>
+</dict>
+</plist>

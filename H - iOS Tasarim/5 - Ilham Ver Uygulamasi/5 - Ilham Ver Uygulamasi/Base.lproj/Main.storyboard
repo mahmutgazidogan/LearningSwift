@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="____Ilham_Ver_Uygulamasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="stevejobs" translatesAutoresizingMaskIntoConstraints="NO" id="QsM-Df-CIE">
+                                <rect key="frame" x="146.66666666666666" y="66" width="100" height="100.33333333333331"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dünyayı değiştirebileceğini düşünecek kadar çılgın olan insanlar, dünyayı değiştirebilirler." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ml2-un-ejd">
+                                <rect key="frame" x="5" y="407" width="383" height="38.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGg-IF-ecb">
+                                <rect key="frame" x="10" y="755" width="373" height="53"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Steve Jobs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUF-cb-yrQ">
+                                <rect key="frame" x="152.66666666666666" y="186.33333333333337" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ml2-un-ejd" secondAttribute="trailing" constant="5" id="3Tx-CH-xWJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bGg-IF-ecb" secondAttribute="trailing" constant="10" id="ACx-FQ-5Th"/>
+                            <constraint firstItem="ml2-un-ejd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JXF-cp-ViY"/>
+                            <constraint firstItem="PUF-cb-yrQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152.66666666666666" id="LPE-8F-iac"/>
+                            <constraint firstItem="PUF-cb-yrQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Npf-zs-odw"/>
+                            <constraint firstItem="PUF-cb-yrQ" firstAttribute="top" secondItem="QsM-Df-CIE" secondAttribute="bottom" constant="20" id="OWb-2p-aDR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bGg-IF-ecb" secondAttribute="bottom" constant="10" id="RRm-Fe-Hts"/>
+                            <constraint firstItem="QsM-Df-CIE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V42-gF-g24"/>
+                            <constraint firstItem="ml2-un-ejd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="Ve4-hD-Rvq"/>
+                            <constraint firstItem="ml2-un-ejd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bH5-L6-K9G"/>
+                            <constraint firstItem="bGg-IF-ecb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="lqI-Wy-FwR"/>
+                            <constraint firstItem="QsM-Df-CIE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="m5y-zb-ldx"/>
+                            <constraint firstItem="bGg-IF-ecb" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.07" id="nY3-WR-Rcn"/>
+                            <constraint firstItem="QsM-Df-CIE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vJ2-GB-RlP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-209" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="stevejobs" width="100" height="100.33333587646484"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

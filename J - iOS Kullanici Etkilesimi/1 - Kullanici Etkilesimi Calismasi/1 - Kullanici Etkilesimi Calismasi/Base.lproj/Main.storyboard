@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="____Kullanıcı_Etkiles_imi_C_alıs_ması" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90e-qx-Ljc">
+                                <rect key="frame" x="165.66666666666666" y="148" width="59" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jnr-D9-wNq">
+                                <rect key="frame" x="122.66666666666669" y="242" width="145" height="32"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Basit Alert Göster">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="basitAlertGoster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ed-MM-Pey"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qu3-JA-UZj">
+                                <rect key="frame" x="114" y="414" width="162" height="32"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Action Sheet Göster">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionSheetGoster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aoG-p1-zoz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNS-c7-koZ">
+                                <rect key="frame" x="124" y="326" width="142" height="32"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Özel Alert Göster">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ozelAlertGoster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yk4-dS-bkd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jnr-D9-wNq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1F0-0R-rH8"/>
+                            <constraint firstItem="ZNS-c7-koZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="47W-ZS-IOf"/>
+                            <constraint firstItem="qu3-JA-UZj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4GP-Nh-Gnv"/>
+                            <constraint firstItem="qu3-JA-UZj" firstAttribute="top" secondItem="ZNS-c7-koZ" secondAttribute="bottom" constant="56" id="alH-fs-R9q"/>
+                            <constraint firstItem="90e-qx-Ljc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="gBr-sE-bbR"/>
+                            <constraint firstItem="90e-qx-Ljc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iwB-Fh-RKs"/>
+                            <constraint firstItem="ZNS-c7-koZ" firstAttribute="top" secondItem="Jnr-D9-wNq" secondAttribute="bottom" constant="52" id="s40-Aa-2ah"/>
+                            <constraint firstItem="Jnr-D9-wNq" firstAttribute="top" secondItem="90e-qx-Ljc" secondAttribute="bottom" constant="64" id="zwn-d3-yJM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelSonuc" destination="90e-qx-Ljc" id="zk2-Bf-sK0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66" y="-41"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
